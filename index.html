@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#F9F8F6">
+    
+    <title>Latitude & Life | Metabolic Regulation & Executive Performance Architecture</title>
+    <meta name="description" content="Institutional metabolic regulation for high-output professionals. Precision architecture for glucose stability, hormonal resilience, and performance longevity.">
+    <link rel="canonical" href="https://latitudeandlife.com/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-base: #F9F8F6;
+            --bg-alt: #F1EFEA;
+            --text-main: #0F0F0F;
+            --text-light: #444440;
+            --accent: #A6895A;
+            --white: #FFFFFF;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+            --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            --shadow: 0 30px 60px rgba(0,0,0,0.05);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: var(--font-body); 
+            background: var(--bg-base); 
+            color: var(--text-main); 
+            line-height: 1.85; 
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 1440px; margin: 0 auto; padding: 0 6%; }
+        .section-padding { padding: 12rem 0; }
+        .divider { border-bottom: 1px solid rgba(0,0,0,0.08); width: 100%; }
+
+        h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; line-height: 1.1; color: var(--text-main); }
+        p { font-weight: 400; font-size: 1.05rem; color: var(--text-light); }
+        
+        header { 
+            position: fixed; top: 0; width: 100%; z-index: 2000; 
+            background: rgba(249, 248, 246, 0.95); 
+            backdrop-filter: blur(25px); 
+            border-bottom: 1px solid rgba(0,0,0,0.05); 
+        }
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 0; }
+        .logo { font-size: 1.4rem; font-weight: 600; letter-spacing: -0.8px; text-transform: lowercase; text-decoration: none; color: var(--text-main); }
+        .nav-desktop { display: flex; gap: 3.5rem; align-items: center; }
+        .nav-link { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2.5px; color: var(--text-light); transition: var(--transition); cursor: pointer; text-decoration: none; }
+        .nav-link:hover { color: var(--text-main); }
+
+        .btn { 
+            display: inline-block; padding: 1.4rem 3.5rem; font-size: 0.8rem; 
+            letter-spacing: 2.5px; text-transform: uppercase; font-weight: 600; 
+            cursor: pointer; transition: var(--transition); text-align: center;
+            border: 1px solid transparent; text-decoration: none;
+        }
+        .btn-solid { background: var(--text-main); color: var(--white); }
+        .btn-solid:hover { background: var(--accent); transform: translateY(-3px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .btn-outline { border: 1.5px solid var(--text-main); color: var(--text-main); }
+        .btn-outline:hover { background: var(--text-main); color: var(--white); }
+
+        .hero { 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            padding-top: 100px; 
+            position: relative; 
+            overflow: hidden; 
+        }
+        .hero-content { position: relative; z-index: 10; width: 55%; }
+        .hero h1 { 
+            font-size: clamp(2.5rem, 5.5vw, 4.8rem); 
+            margin-bottom: 2rem; 
+            letter-spacing: -2px; 
+            line-height: 1.05;
+        }
+        .hero p { max-width: 580px; margin-bottom: 3.5rem; font-size: 1.15rem; }
+        
+        .hero-visual {
+            position: absolute; 
+            right: 0; 
+            top: 0; 
+            width: 48%; 
+            height: 100%;
+            background: linear-gradient(90deg, var(--bg-base) 0%, rgba(249, 248, 246, 0.4) 15%, rgba(249, 248, 246, 0) 40%),
+                        url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+            background-size: cover;
+            opacity: 0.85;
+            filter: sepia(5%) contrast(102%);
+        }
+
+        .thesis-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 8rem; align-items: center; }
+        .thesis-image { 
+            height: 650px; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);
+            filter: grayscale(10%) sepia(5%);
+            background: url('https://media.istockphoto.com/id/1301830934/photo/healthy-gut.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZJeKhFq0po1BcbUO2sjnTuSsWVv6fHbzizg4BQT73Ko=') no-repeat center center;
+            background-size: cover;
+        }
+        .stat-box { border-left: 3px solid var(--accent); padding-left: 2.5rem; margin-top: 4rem; }
+        .stat-box h4 { font-size: 0.85rem; text-transform: uppercase; color: var(--accent); letter-spacing: 3px; margin-bottom: 1rem; font-weight: 700; }
+
+        .framework-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1px; background: rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.1); }
+        .framework-item { background: var(--bg-base); padding: 5.5rem 4rem; transition: var(--transition); }
+        .framework-item:hover { background: var(--bg-alt); }
+        .framework-num { font-size: 0.8rem; font-weight: 700; color: var(--accent); display: block; margin-bottom: 2rem; letter-spacing: 4px; }
+        .framework-item h3 { font-size: 1.9rem; margin-bottom: 1.5rem; }
+
+        .mechanics-section { background: var(--bg-alt); }
+        .mechanics-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 9rem; align-items: start; }
+        .mechanics-visual { border-radius: 4px; overflow: hidden; box-shadow: var(--shadow); margin-top: 3rem; background: var(--bg-base); }
+        .mechanics-visual img { width: 100%; display: block; filter: sepia(8%) contrast(98%); mix-blend-mode: multiply; }
+        .mechanics-caption { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-top: 1.5rem; font-weight: 600; text-align: center; }
+        .mechanics-list { list-style: none; }
+        .mechanics-list li { padding: 2.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .mechanics-list strong { display: block; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; color: var(--accent); margin-bottom: 1rem; }
+
+        .exclusion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8rem; background: var(--text-main); color: var(--white); padding: 8rem 7rem; box-shadow: var(--shadow); }
+        .exclusion-grid h2 { color: var(--white); }
+        .exclusion-list { list-style: none; }
+        .exclusion-list li { margin-bottom: 1.5rem; padding-left: 2.5rem; position: relative; opacity: 0.85; font-size: 1.1rem; }
+        .exclusion-list li::before { content: "✕"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+        .cohort-card { background: var(--white); padding: 8rem 7rem; border: 1px solid var(--bg-alt); box-shadow: var(--shadow); }
+        .cohort-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 7rem; align-items: start; }
+        .cohort-visual { 
+            height: 500px; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);
+            background: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+            background-size: cover;
+        }
+        .cohort-meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; margin: 4rem 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 3rem 0; }
+        .meta-item span { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-light); margin-bottom: 0.8rem; }
+        .meta-item strong { font-size: 1.3rem; font-weight: 600; color: var(--text-main); }
+
+        .waitlist-form { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+        .input-group { display: flex; flex-direction: column; gap: 1rem; }
+        .input-group label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; color: var(--text-light); }
+        input, select, textarea { padding: 1.3rem; border: 1px solid #E5E5E0; background: #FBFBFA; font-family: var(--font-body); font-size: 1.05rem; color: var(--text-main); border-radius: 2px; }
+        input:focus { border-color: var(--accent); outline: none; background: var(--white); }
+        .full-width { grid-column: span 2; }
+
+        footer { padding: 10rem 0 5rem; border-top: 1px solid var(--bg-alt); }
+
+        @media (max-width: 1024px) {
+            .nav-desktop { display: none; }
+            .hero-content { width: 100%; }
+            .hero-visual { display: none; }
+            .thesis-grid, .mechanics-flex, .exclusion-grid, .cohort-grid, .waitlist-form { grid-template-columns: 1fr; gap: 4rem; }
+            .cohort-card { padding: 4rem 2rem; }
+            .exclusion-grid { padding: 5rem 2rem; }
+            .section-padding { padding: 8rem 0; }
+        }
+
+        .reveal { opacity: 0; transform: translateY(40px); transition: 1.6s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-flex">
+            <a href="#" class="logo">latitude & life</a>
+            <nav class="nav-desktop">
+                <a href="#thesis" class="nav-link">The Thesis</a>
+                <a href="#framework" class="nav-link">Architecture</a>
+                <a href="#cohort" class="nav-link">Phase 01</a>
+                <a href="#cohort" class="btn btn-solid" style="padding: 0.8rem 2.5rem;">Apply for Waitlist</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content reveal">
+            <span class="framework-num" style="margin-bottom: 1.5rem; display: block;">Institutional Performance Infrastructure</span>
+            <h1>Metabolic Regulation <br>Creates Performance <br><span style="font-style: italic;">Freedom.</span></h1>
+            <p>For individuals whose cognitive output is non-negotiable. We replace dietary noise with a structured metabolic operating system designed for the professional environment.</p>
+            
+            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                <a href="#cohort" class="btn btn-solid">Apply for Founding Cohort</a>
+                <a href="#framework" class="btn btn-outline">Review Architecture</a>
+            </div>
+        </div>
+        <div class="hero-visual"></div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="thesis" class="section-padding">
+        <div class="container thesis-grid reveal">
+            <div class="thesis-image"></div>
+            <div>
+                <span class="framework-num">Biological Infrastructure</span>
+                <h2 style="font-size: 3.5rem; margin: 2rem 0;">Structure Over <br>Optimization.</h2>
+                <p style="margin-bottom: 2.5rem;">The Latitude Regulation Architecture™ does not dictate caloric restriction or dietary exclusion. You may maintain your dietary preferences; we regulate the mechanical and temporal infrastructure of how the system processes them. Performance longevity is the byproduct of volatility elimination.</p>
+                
+                <div class="stat-box">
+                    <h4>Validation Status</h4>
+                    <p>Internal validation study in progress. Structured biometric review underway to establish Phase 02 performance benchmarks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="framework" class="section-padding bg-alt">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 8rem;" class="reveal">
+                <span class="framework-num">The Protocol</span>
+                <h2 style="font-size: 3.8rem; margin-top: 1rem;">The Regulation Architecture™</h2>
+            </div>
+            
+            <div class="framework-grid reveal">
+                <div class="framework-item">
+                    <span class="framework-num">01</span>
+                    <h3>Circadian Structural Timing</h3>
+                    <p>Aligning ingestion and exertion windows with endogenous hormonal cycles for peak metabolic efficiency.</p>
+                </div>
+                <div class="framework-item">
+                    <span class="framework-num">02</span>
+                    <h3>Fueled Output Principle</h3>
+                    <p>Caloric deployment specifically architected to support prolonged high-intensity cognitive phases.</p>
+                </div>
+                <div class="framework-item">
+                    <span class="framework-num">03</span>
+                    <h3>Protein Anchor Discipline</h3>
+                    <p>Establishing structural amino acid baselines to dampen glycemic volatility and preserve hormonal integrity.</p>
+                </div>
+                <div class="framework-item">
+                    <span class="framework-num">04</span>
+                    <h3>Structured Meal Spacing</h3>
+                    <p>Managing non-ingestion intervals to allow for complete gastric clearance and insulin sensitivity recovery.</p>
+                </div>
+                <div class="framework-item">
+                    <span class="framework-num">05</span>
+                    <h3>Oral-Phase Optimization</h3>
+                    <p>The mechanical activation of digestion through mastication precision and salivary enzymatic signaling.</p>
+                </div>
+                <div class="framework-item">
+                    <span class="framework-num">06</span>
+                    <h3>Environmental Control</h3>
+                    <p>Mitigating exogenous stressors—light pollution and acoustic disruption—that destabilize metabolic baselines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding mechanics-section">
+        <div class="container mechanics-flex reveal">
+            <div>
+                <span class="framework-num">Mechanical Efficiency</span>
+                <h2 style="font-size: 3.5rem; margin: 2rem 0;">The Digestive <br>Regulation Framework</h2>
+                <p style="margin-bottom: 3rem;">Ingestion control is a mechanical discipline. We regulate the oral phase to modulate the systemic response, ensuring post-prandial cognitive clarity remains intact.</p>
+                
+                <div class="mechanics-visual">
+                    <img src="https://images.unsplash.com/photo-1515544824810-099d86a4c49e?auto=format&fit=crop&w=1600&q=80" alt="Mechanical Analysis of Organic Texture">
+                </div>
+                <p class="mechanics-caption">Mechanical ingestion determines systemic response.</p>
+            </div>
+            <ul class="mechanics-list">
+                <li>
+                    <strong>Surface Area Optimization</strong>
+                    <p>Precision mastication increases nutrient exposure for enzymatic activation, reducing systemic inflammatory load.</p>
+                </li>
+                <li>
+                    <strong>Glycemic Modulation</strong>
+                    <p>Controlling the temporal pace of ingestion to flatten the glucose curve and preserve executive function.</p>
+                </li>
+                <li>
+                    <strong>Parasympathetic Dominance</strong>
+                    <p>Utilizing the digestive stability window to switch the nervous system into a recovery-oriented state.</p>
+                </li>
+                <li>
+                    <strong>Enzymatic Integrity</strong>
+                    <p>Strategic liquid sequencing to prevent gastric dilution and maintain digestive mechanical efficiency.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-padding container">
+        <div class="exclusion-grid reveal">
+            <div>
+                <span class="framework-num" style="color: var(--accent);">Selective Protocol</span>
+                <h2 style="font-size: 3rem; margin-top: 1rem;">Who This Is <br>Not For</h2>
+            </div>
+            <div>
+                <ul class="exclusion-list">
+                    <li>Individuals seeking short-term fat loss or "detox" clichés.</li>
+                    <li>Those dependent on supplement-heavy or "hack"-based protocols.</li>
+                    <li>Professionals unwilling to adopt structured behavioral discipline.</li>
+                    <li>Participants looking for passive, outsourced health management.</li>
+                </ul>
+                <p style="margin-top: 4rem; font-weight: 500; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 2.5rem; color: var(--accent);">
+                    Latitude is designed for high-output professionals committed to metabolic resilience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cohort" class="section-padding">
+        <div class="container reveal">
+            <div class="cohort-card">
+                <div class="cohort-grid">
+                    <div>
+                        <span class="framework-num">Enrollment Phase 01</span>
+                        <h2 style="font-size: 3.5rem; margin: 2rem 0;">Founding Regulation Cohort</h2>
+                        <p style="margin-bottom: 3rem;">A 4-week structured metabolic protocol for 12 participants. A rigorous, application-based behavioral system for establishing the Baseline Regulation Architecture™.</p>
+                        <div class="cohort-visual"></div>
+                    </div>
+                    
+                    <div>
+                        <div class="cohort-meta">
+                            <div class="meta-item">
+                                <span>Participants</span>
+                                <strong>12 Maximum</strong>
+                            </div>
+                            <div class="meta-item">
+                                <span>Cycle</span>
+                                <strong>4 Weeks</strong>
+                            </div>
+                            <div class="meta-item">
+                                <span>Commitment</span>
+                                <strong>Biometric Logging</strong>
+                            </div>
+                            <div class="meta-item">
+                                <span>Access</span>
+                                <strong>Waitlist Only</strong>
+                            </div>
+                        </div>
+
+                        <form class="waitlist-form" id="applicationForm">
+                            <div class="input-group">
+                                <label>Full Name</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Professional Role</label>
+                                <input type="text" placeholder="e.g. Managing Director" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Professional Email</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Primary Challenge</label>
+                                <select required>
+                                    <option value="">Select Focus</option>
+                                    <option>Cognitive Output Volatility</option>
+                                    <option>Systemic Recovery Fatigue</option>
+                                    <option>Metabolic Instability</option>
+                                    <option>Hormonal Resilience</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>Current Wake Time</label>
+                                <input type="text" placeholder="e.g. 05:30 AM">
+                            </div>
+                            <div class="input-group">
+                                <label>Training Frequency (/WK)</label>
+                                <input type="number" min="0" max="21">
+                            </div>
+                            <div class="input-group full-width">
+                                <label>Performance Objectives</label>
+                                <textarea rows="3" placeholder="Describe the current metabolic constraints on your professional output..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-solid full-width">Apply for Founding Cohort Waitlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 7rem; margin-bottom: 8rem;">
+                <div>
+                    <div class="logo" style="margin-bottom: 2.5rem;">latitude & life</div>
+                    <p style="opacity: 0.8; max-width: 450px;">Architecting the metabolic infrastructure for global leaders. Prepared for longitudinal biometric publication.</p>
+                </div>
+                <div>
+                    <h5 style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 3px; margin-bottom: 2.5rem; color: var(--accent);">Infrastructure</h5>
+                    <p><a href="#framework" style="display: block; margin-bottom: 1rem; text-decoration: none; color: var(--text-light);">Architecture</a></p>
+                    <p><a href="#cohort" style="display: block; margin-bottom: 1rem; text-decoration: none; color: var(--text-light);">Founding Cohort</a></p>
+                    <p><a href="#" style="display: block; margin-bottom: 1rem; text-decoration: none; color: var(--text-light);">Biometric Case Studies</a></p>
+                </div>
+                <div>
+                    <h5 style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 3px; margin-bottom: 2.5rem; color: var(--accent);">Global Advisory</h5>
+                    <p style="margin-bottom: 1rem; color: var(--text-light);">Direct: +91 9599949996</p>
+                    <p style="color: var(--text-light);">connect@latitudeandlife.com</p>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div style="padding-top: 4rem; display: flex; justify-content: space-between; font-size: 0.75rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 2px;">
+                <p>&copy; 2026 Latitude & Life. Serving EMEA and Asia Pacific.</p>
+                <p>Metabolic Performance Longevity</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("Application received. The Phase 01 Cohort is currently under biometric validation review. You will be contacted via professional email.");
+        });
+    </script>
+</body>
+</html>
