@@ -1,425 +1,1369 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#F9F8F6">
+<link rel="dns-prefetch" href="//images.unsplash.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Latitude & Life | Global Beauty Rituals & Luxury Skincare</title>
+<meta name="description" content="Discover Latitude & Life, a luxury skincare brand inspired by ancient global beauty rituals. Experience the Ibiza Glow Serum, Kyoto Rice Cleanser, and world-class botanical wellness.">
+<meta name="keywords" content="luxury skincare, global beauty rituals, Ibiza Glow Serum, Kyoto Rice Cleanser, Seoul Glass Skin, clean beauty, botanical skincare, premium beauty journal, Latitude and Life">
+<meta name="author" content="Latitude & Life">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://latitudeandlife.com/">
+
+<meta property="og:title" content="Latitude & Life | Global Beauty Rituals">
+<meta property="og:description" content="Experience premium skincare rituals inspired by the world's most iconic destinations. From Ibiza to Kyoto.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=1200&auto=format&fit=crop">
+<meta property="og:url" content="https://latitudeandlife.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Latitude & Life">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Latitude & Life | Global Skincare">
+<meta name="twitter:description" content="Authentic destination-inspired skincare rituals. Clean, luxury, botanical.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=1200&auto=format&fit=crop"> (https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=1200&auto=format&fit=crop)">
+
+<link rel="icon" type="image/png" href="https://latitudeandlife.com/favicon.png (https://latitudeandlife.com/favicon.png)">
+
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=2000&auto=format&fit=crop"> (https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=2000&auto=format&fit=crop)">
+
+<link rel="preconnect" href="https://fonts.googleapis.com (https://fonts.googleapis.com)">
+<link rel="preconnect" href="https://fonts.gstatic.com (https://fonts.gstatic.com)" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap (https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap)" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org (https://schema.org)",
+  "@type": "Brand",
+  "name": "Latitude & Life",
+  "url": "https://latitudeandlife.com/ (https://latitudeandlife.com/)",
+  "logo": "https://latitudeandlife.com/logo.png (https://latitudeandlife.com/logo.png)",
+  "description": "A luxury storytelling skincare brand offering rituals inspired by iconic global destinations.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Ritual Collection",
+"itemListElement": [
+{
+"@type": "Product",
+"name": "Ibiza Glow Serum",
+"image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be",
+"description": "Mediterranean-inspired vitamin C serum for radiant glowing skin.",
+"brand": {
+"@type": "Brand",
+"name": "Latitude & Life"
+},
+"offers": {
+"@type": "Offer",
+"price": "999",
+"priceCurrency": "INR",
+"availability": "https://schema.org/InStock"
+}
+},
+{
+"@type": "Product",
+"name": "Kyoto Rice Cleanser",
+"description": "Gentle rice water cleanser inspired by traditional Japanese beauty rituals.",
+"brand": {
+"@type": "Brand",
+"name": "Latitude & Life"
+},
+"offers": {
+"@type": "Offer",
+"priceCurrency": "INR",
+"availability": "https://schema.org/PreOrder"
+}
+},
+{
+"@type": "Product",
+"name": "Seoul Glass Skin Toner",
+"description": "Hydrating Korean toner designed for glass-skin clarity.",
+"brand": {
+"@type": "Brand",
+"name": "Latitude & Life"
+},
+"offers": {
+"@type": "Offer",
+"priceCurrency": "INR",
+"availability": "https://schema.org/PreOrder"
+}
+}
+]
+</script>
+
+<style>
+#luxury-loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#2A1619;
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+transition:opacity .8s ease, visibility .8s;
+}
+
+.loader-inner{
+text-align:center;
+color:white;
+}
+
+.loader-inner h1{
+font-family:'Playfair Display';
+letter-spacing:3px;
+margin-bottom:20px;
+}
+
+.loader-line{
+width:0;
+height:2px;
+background:#D4B483;
+animation:loadLine 2s ease forwards;
+}
+
+@keyframes loadLine{
+to{width:200px;}
+}
+    :root {
+        --primary: #2A1619;
+        --secondary: #F7F3EE;
+        --accent: #D4B483;
+        --beige: #EDE3D6;
+        --text: #1C1C1C;
+        --soft-brown: #5A3A3E;
+        --white: #FFFFFF;
+        --luxury-shadow: 0 20px 40px rgba(0,0,0,0.06);
+        --glass-border: rgba(255, 255, 255, 0.4);
+        --transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+.hero-content{
+transform:translate3d(0,0,0);
+transition:transform .25s ease-out;
+will-change:transform;
+}
+
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: auto; overflow-x: hidden; }
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--text);
+        line-height: 1.6;
+        background: #faf7f3;
+        overflow-x: hidden;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 600; letter-spacing: -0.01em; }
+    a { text-decoration: none; color: inherit; transition: var(--transition); cursor: pointer; }
+    ul { list-style: none; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* Navigation */
+    nav {
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:92%;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+
+background:rgba(255,255,255,0.55);
+backdrop-filter:blur(20px);
+
+border-radius:8px;
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+border:1px solid rgba(255,255,255,0.4);
+
+transition:all .4s ease;
+}
+
+    .logo { font-size: 1.6rem; letter-spacing: 2px; color: var(--primary); font-weight: 700; text-transform: uppercase; }
+    .nav-links { display: flex; gap: 40px; }
+    .nav-links a { font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* Hero */
+    .hero {
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:var(--white);
+    background: linear-gradient(rgba(42,22,25,0.3), rgba(42,22,25,0.3)),
+                url('https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+    animation: heroZoom 28s ease-in-out infinite alternate;
+}
+
+    .hero-label { font-size: 0.85rem; letter-spacing: 6px; margin-bottom: 20px; text-transform: uppercase; position: relative; }
+    .hero-label::before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 1px;
+        background: var(--white);
+        margin: 0 auto 15px;
+    }
+    .hero h1 { font-size: clamp(3.5rem, 9vw, 7rem); margin-bottom: 20px; letter-spacing:-1px;
+}
+    .hero p { max-width: 650px; font-size: 1.2rem; margin-bottom: 45px; font-weight: 300; }
+
+    .btn {
+        padding: 20px 45px;
+        background: var(--white);
+        color: var(--primary);
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 2px;
+        display: inline-block;
+        transition: var(--transition);
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+    /* Collection Grid */
+    .collection { padding: 140px 8% 60px; }
+    .section-header { text-align: center; margin-bottom: 60px; }
+    .section-header h2 { font-size: 3.2rem; color: var(--primary); margin-bottom: 15px; }
+    .section-header p { color: var(--soft-brown); letter-spacing: 1px; }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 45px;
+    }
+    .product-card {
+        background: var(--white);
+        padding: 25px;
+        text-align: center;
+        border-radius: 4px;
+        transition: var(--transition);
+        overflow: hidden;
+        border: 1px solid transparent;
+    }
+    .product-card:hover{
+transform:translateY(-18px);
+box-shadow:0 40px 90px rgba(0,0,0,0.12);
+border:1px solid rgba(212,180,131,0.5);
+}
+.product-card::after{
+content:"";
+position:relative;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(to bottom,transparent,rgba(0,0,0,0.05));
+opacity:0;
+transition:.5s;
+}
+
+.product-card:hover::after{
+opacity:1;
+}
+    .product-card img { height: 380px; width: 100%; object-fit: cover; margin-bottom: 25px; transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .product-card:hover img { transform: scale(1.05); }
+    .product-card h3 { font-size: 1.4rem; color: var(--primary); margin-bottom: 5px; }
+    .product-card .location { font-size: 0.75rem; letter-spacing: 1px; color: var(--soft-brown); text-transform: uppercase; margin-bottom: 10px; }
+    .product-card .price { font-size: 1.1rem; font-family: 'Playfair Display'; color: var(--accent); font-weight: 600; }
+
+    /* Ritual Method */
+    .ritual-method { padding: 100px 8%; background: var(--white); text-align: center; }
+    .method-container { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; position: relative; margin-top: 60px; }
+    .method-container::before { content: ""; position: absolute; top: 40px; left: 10%; right: 10%; height: 1px; background: var(--beige); z-index: 1; }
+    .method-step { flex: 1; position: relative; z-index: 2; padding: 0 10px; }
+    .step-number { width: 80px; height: 80px; background: var(--white); border: 1px solid var(--beige); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; font-family: 'Playfair Display'; font-size: 1.2rem; color: var(--accent); transition: var(--transition); }
+    .method-step h4 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-bottom: 10px; }
+    .method-step h3 { font-size: 1.2rem; margin-bottom: 5px; color: var(--primary); }
+
+    /* Ritual Sections & Giant Titles */
+.ritual-section{
+min-height:100vh;
+position:relative;
+display:flex;
+align-items:center;
+padding:100px 8%;
+background-size:cover;
+background-position:center;
+overflow:hidden;
+
+opacity:0;
+transform:translateY(120px) scale(.96);
+transition:all 1.3s cubic-bezier(0.16,1,0.3,1);
+}
+
+.ritual-section.visible{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+    @media (min-width: 1025px) { .ritual-section { background-attachment: fixed; } }
+
+    .ritual-section::before {
+.ritual-section{
+background-attachment:fixed;
+}
+        content: "";
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(to bottom, rgba(42,22,25,0.2), rgba(42,22,25,0.5));
+        z-index: 1;
+    }
+
+    .giant-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        white-space: nowrap;
+        text-align: center;
+        font-size: clamp(80px, 18vw, 240px);
+        color: rgba(255,255,255,0.18);
+        font-weight: 700;
+        z-index: 1;
+        pointer-events: none;
+        letter-spacing: 0.05em;
+    }
+
+    .glass-panel {
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(25px);
+        padding: 60px;
+        width: 100%; max-width: 520px;
+        border-radius: 4px;
+        z-index: 5;
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 40px 100px rgba(0,0,0,0.15);
+        position: relative;
+    }
+    .ritual-section:nth-child(odd) { justify-content: flex-start; }
+    .ritual-section:nth-child(even) { justify-content: flex-end; }
+
+    .coordinates { font-size: 0.75rem; letter-spacing: 3px; color: var(--accent); font-weight: 500; display: block; margin-bottom: 15px; }
+    .ritual-section h2 { font-size: 2.8rem; margin-bottom: 20px; color: var(--primary); }
     
-    <title>Latitude & Life | Metabolic Regulation & Executive Performance Architecture</title>
-    <meta name="description" content="Institutional metabolic regulation for high-output professionals. Precision architecture for glucose stability, hormonal resilience, and performance longevity.">
-    <link rel="canonical" href="https://latitudeandlife.com/">
+    /* Product Details */
+    .ingredient-story { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 30px 0; }
+    .ingredient-card { background: rgba(247, 243, 238, 0.5); padding: 15px; border-radius: 4px; border: 1px solid transparent; transition: var(--transition); }
+    .ingredient-card:hover { transform: translateY(-5px); background: var(--white); box-shadow: var(--luxury-shadow); border-color: var(--beige); }
+    .ingredient-card h4 { font-size: 0.85rem; color: var(--accent); margin-bottom: 8px; text-transform: uppercase; }
+    .ingredient-card p { font-size: 0.7rem; color: var(--soft-brown); line-height: 1.4; }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    .benefits-list { margin: 25px 0; }
+    .benefits-list li { font-size: 0.9rem; margin-bottom: 10px; display: flex; align-items: center; }
+    .benefits-list li::before { content: "✦"; color: var(--accent); margin-right: 12px; }
 
-    <style>
-        :root {
-            --bg-base: #F9F8F6;
-            --bg-alt: #F1EFEA;
-            --text-main: #0F0F0F;
-            --text-light: #444440;
-            --accent: #A6895A;
-            --white: #FFFFFF;
-            --font-heading: 'Playfair Display', serif;
-            --font-body: 'Inter', sans-serif;
-            --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-            --shadow: 0 30px 60px rgba(0,0,0,0.05);
-        }
+    .trust-checklist { display: flex; flex-direction: column; gap: 8px; margin: 20px 0; font-size: 0.75rem; font-weight: 500; color: var(--soft-brown); }
+    .trust-checklist li { display: flex; align-items: center; gap: 8px; }
+    .trust-checklist li span { color: var(--accent); font-weight: bold; }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { 
-            font-family: var(--font-body); 
-            background: var(--bg-base); 
-            color: var(--text-main); 
-            line-height: 1.85; 
-            -webkit-font-smoothing: antialiased;
-        }
+    .price-highlight { font-size: 2.2rem; color: var(--accent); font-family: 'Playfair Display'; margin-bottom: 5px; display: block; }
+    .scarcity-msg { font-size: 0.7rem; letter-spacing: 1px; color: var(--accent); font-style: italic; margin-bottom: 20px; display: block; }
 
-        .container { max-width: 1440px; margin: 0 auto; padding: 0 6%; }
-        .section-padding { padding: 12rem 0; }
-        .divider { border-bottom: 1px solid rgba(0,0,0,0.08); width: 100%; }
+    .btn-gold { background: var(--primary); color: var(--white); border: none; cursor: pointer; padding: 20px 45px; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; font-weight: 600; width: 100%; text-align: center; transition: var(--transition); }
+    .btn-gold:hover { background: var(--accent); color: var(--primary); letter-spacing:3px;}
 
-        h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; line-height: 1.1; color: var(--text-main); }
-        p { font-weight: 400; font-size: 1.05rem; color: var(--text-light); }
-        
-        header { 
-            position: fixed; top: 0; width: 100%; z-index: 2000; 
-            background: rgba(249, 248, 246, 0.95); 
-            backdrop-filter: blur(25px); 
-            border-bottom: 1px solid rgba(0,0,0,0.05); 
-        }
-        .nav-flex { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 0; }
-        .logo { font-size: 1.4rem; font-weight: 600; letter-spacing: -0.8px; text-transform: lowercase; text-decoration: none; color: var(--text-main); }
-        .nav-desktop { display: flex; gap: 3.5rem; align-items: center; }
-        .nav-link { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2.5px; color: var(--text-light); transition: var(--transition); cursor: pointer; text-decoration: none; }
-        .nav-link:hover { color: var(--text-main); }
+    /* Map Section */
+    .map-section { padding: 120px 8%; text-align: center; overflow: hidden; background: #faf7f3; }
+    .globe-wrapper { position: relative; width: 100%; max-width: 900px; margin: 60px auto; perspective: 1500px; }
 
-        .btn { 
-            display: inline-block; padding: 1.4rem 3.5rem; font-size: 0.8rem; 
-            letter-spacing: 2.5px; text-transform: uppercase; font-weight: 600; 
-            cursor: pointer; transition: var(--transition); text-align: center;
-            border: 1px solid transparent; text-decoration: none;
-        }
-        .btn-solid { background: var(--text-main); color: var(--white); }
-        .btn-solid:hover { background: var(--accent); transform: translateY(-3px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        .btn-outline { border: 1.5px solid var(--text-main); color: var(--text-main); }
-        .btn-outline:hover { background: var(--text-main); color: var(--white); }
+.globe-rotating-container { 
+width: 100%; 
+height: 500px; 
+transform-style: preserve-3d; 
+animation: rotateGlobe 140s linear infinite; 
+}
 
-        .hero { 
-            min-height: 100vh; 
-            display: flex; 
-            align-items: center; 
-            padding-top: 100px; 
-            position: relative; 
-            overflow: hidden; 
-        }
-        .hero-content { position: relative; z-index: 10; width: 55%; }
-        .hero h1 { 
-            font-size: clamp(2.5rem, 5.5vw, 4.8rem); 
-            margin-bottom: 2rem; 
-            letter-spacing: -2px; 
-            line-height: 1.05;
-        }
-        .hero p { max-width: 580px; margin-bottom: 3.5rem; font-size: 1.15rem; }
-        
-        .hero-visual {
-            position: absolute; 
-            right: 0; 
-            top: 0; 
-            width: 48%; 
-            height: 100%;
-            background: linear-gradient(90deg, var(--bg-base) 0%, rgba(249, 248, 246, 0.4) 15%, rgba(249, 248, 246, 0) 40%),
-                        url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
-            background-size: cover;
-            opacity: 0.85;
-            filter: sepia(5%) contrast(102%);
-        }
+/* Smooth cinematic zoom */
+#globe-container{
+transition:transform 1.5s ease;
+}    
+@keyframes rotateGlobe { from { transform: rotateY(0deg); } to { transform: rotateY(360deg); } }
+    @media (max-width: 768px) { .globe-rotating-container { animation: none; } }
+    .map-svg { width: 100%; fill: var(--beige); opacity: 0.8; }
 
-        .thesis-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 8rem; align-items: center; }
-        .thesis-image { 
-            height: 650px; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);
-            filter: grayscale(10%) sepia(5%);
-            background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
-            background-size: cover;
-        }
-        .stat-box { border-left: 3px solid var(--accent); padding-left: 2.5rem; margin-top: 4rem; }
-        .stat-box h4 { font-size: 0.85rem; text-transform: uppercase; color: var(--accent); letter-spacing: 3px; margin-bottom: 1rem; font-weight: 700; }
+.globe{
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+transform-style:preserve-3d;
+animation: globeSpin 60s linear infinite;
+}
 
-        .framework-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1px; background: rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.1); }
-        .framework-item { background: var(--bg-base); padding: 5.5rem 4rem; transition: var(--transition); }
-        .framework-item:hover { background: var(--bg-alt); }
-        .framework-num { font-size: 0.8rem; font-weight: 700; color: var(--accent); display: block; margin-bottom: 2rem; letter-spacing: 4px; }
-        .framework-item h3 { font-size: 1.9rem; margin-bottom: 1.5rem; }
+.globe img{
+width:80%;
+opacity:.6;
+filter:contrast(1.1);
+}
 
-        .mechanics-section { background: var(--bg-alt); }
-        .mechanics-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 9rem; align-items: start; }
-        .mechanics-visual { border-radius: 4px; overflow: hidden; box-shadow: var(--shadow); margin-top: 3rem; background: var(--bg-base); }
-        .mechanics-visual img { width: 100%; display: block; filter: sepia(8%) contrast(98%); mix-blend-mode: multiply; }
-        .mechanics-caption { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-top: 1.5rem; font-weight: 600; text-align: center; }
-        .mechanics-list { list-style: none; }
-        .mechanics-list li { padding: 2.5rem 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
-        .mechanics-list strong { display: block; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; color: var(--accent); margin-bottom: 1rem; }
+@keyframes globeSpin{
 
-        .exclusion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8rem; background: var(--text-main); color: var(--white); padding: 8rem 7rem; box-shadow: var(--shadow); }
-        .exclusion-grid h2 { color: var(--white); }
-        .exclusion-list { list-style: none; }
-        .exclusion-list li { margin-bottom: 1.5rem; padding-left: 2.5rem; position: relative; opacity: 0.85; font-size: 1.1rem; }
-        .exclusion-list li::before { content: "✕"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+0%{transform:rotateY(0deg);}
+100%{transform:rotateY(360deg);}
 
-        .cohort-card { background: var(--white); padding: 8rem 7rem; border: 1px solid var(--bg-alt); box-shadow: var(--shadow); }
-        .cohort-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 7rem; align-items: start; }
-        .cohort-visual { 
-            height: 500px; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow);
-            background: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
-            background-size: cover;
-        }
-        .cohort-meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; margin: 4rem 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 3rem 0; }
-        .meta-item span { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-light); margin-bottom: 0.8rem; }
-        .meta-item strong { font-size: 1.3rem; font-weight: 600; color: var(--text-main); }
+}
 
-        .waitlist-form { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
-        .input-group { display: flex; flex-direction: column; gap: 1rem; }
-        .input-group label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; color: var(--text-light); }
-        input, select, textarea { padding: 1.3rem; border: 1px solid #E5E5E0; background: #FBFBFA; font-family: var(--font-body); font-size: 1.05rem; color: var(--text-main); border-radius: 2px; }
-        input:focus { border-color: var(--accent); outline: none; background: var(--white); }
-        .full-width { grid-column: span 2; }
+.marker{
+animation: markerFloat 3s ease-in-out infinite;
+}
 
-        footer { padding: 10rem 0 5rem; border-top: 1px solid var(--bg-alt); }
+@keyframes markerFloat{
 
-        @media (max-width: 1024px) {
-            .nav-desktop { display: none; }
-            .hero-content { width: 100%; }
-            .hero-visual { display: none; }
-            .thesis-grid, .mechanics-flex, .exclusion-grid, .cohort-grid, .waitlist-form { grid-template-columns: 1fr; gap: 4rem; }
-            .cohort-card { padding: 4rem 2rem; }
-            .exclusion-grid { padding: 5rem 2rem; }
-            .section-padding { padding: 8rem 0; }
-        }
+0%{transform:translate(-50%,-50%)}
+50%{transform:translate(-50%,-60%)}
+100%{transform:translate(-50%,-50%)}
 
-        .reveal { opacity: 0; transform: translateY(40px); transition: 1.6s cubic-bezier(0.16, 1, 0.3, 1); }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-    </style>
+}
+    
+    .marker { position: absolute; width: 16px; height: 16px; background: var(--accent); border-radius: 50%; border: 2px solid var(--white); transform: translate(-50%, -50%); z-index: 10; cursor: pointer; transition: var(--transition); }
+    .marker:hover, .marker.active { background: var(--primary); transform: translate(-50%, -50%) scale(1.4); box-shadow: 0 0 20px var(--accent); }
+@keyframes markerPulse{
+0%{
+box-shadow:0 0 0 0 rgba(212,180,131,0.7);
+}
+70%{
+box-shadow:0 0 0 15px rgba(212,180,131,0);
+}
+100%{
+box-shadow:0 0 0 0 rgba(212,180,131,0);
+}
+}
+
+.marker.active{
+animation:markerPulse 1.2s ease-out;
+}
+
+    /* Reviews */
+    .reviews-section { padding: 100px 8%; background: var(--secondary); text-align: center; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+    .review-card { background: var(--white); padding: 40px; border-radius: 4px; box-shadow: var(--luxury-shadow); }
+    .review-card p { font-style: italic; color: var(--primary); margin-bottom: 20px; font-size: 1.1rem; font-family: 'Playfair Display'; }
+    .review-author { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+
+    /* Journal & Library */
+    .ingredient-library { padding: 120px 8%; background: var(--white); }
+    .library-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; }
+    .library-item { padding: 40px; background: var(--secondary); text-align: center; border-radius: 4px; transition: var(--transition); }
+    .library-item h3 { color: var(--accent); margin-bottom: 15px; }
+
+    .journal { padding: 120px 8%; background: var(--secondary); }
+    .journal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+    .journal-card { background: var(--white); border-radius: 4px; overflow: hidden; transition: var(--transition); }
+    .journal-card img { width: 100%; height: 250px; object-fit: cover; }
+    .journal-content { padding: 30px; }
+
+    /* Story & Contact */
+    .story { padding: 160px 10%; text-align: center; background: var(--primary); color: var(--beige); }
+    .story h2 { font-size: 3.8rem; color: var(--accent); margin-bottom: 40px; }
+
+    .newsletter { padding: 100px 8%; text-align: center; background: var(--beige); }
+    .newsletter-form { display: flex; max-width: 500px; margin: 40px auto 0; gap: 10px; }
+    .newsletter-form input { flex: 1; padding: 18px; border: 1px solid rgba(0,0,0,0.1); outline: none; }
+
+    .contact { padding: 140px 8%; background: var(--secondary); display: flex; flex-direction: column; align-items: center; }
+    .contact-form { width: 100%; max-width: 650px; display: flex; flex-direction: column; gap: 20px; }
+    .contact-form input, .contact-form textarea { padding: 22px; border: 1px solid var(--beige); background: var(--white); outline: none; transition: var(--transition); }
+
+    footer { padding: 100px 8% 40px; background: var(--primary); color: var(--white); text-align: center; }
+    .social-links { display: flex; justify-content: center; gap: 40px; margin: 40px 0; font-size: 0.75rem; letter-spacing: 2px; }
+
+    /* Reveal Animations */
+    /* Cinematic Reveal Animations */
+
+.reveal{
+opacity:0;
+transform:translateY(80px) scale(.96);
+transition:all 1.2s cubic-bezier(0.16,1,0.3,1);
+will-change:transform,opacity;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+
+.reveal:nth-child(1){transition-delay:.1s}
+.reveal:nth-child(2){transition-delay:.2s}
+.reveal:nth-child(3){transition-delay:.3s}
+    .story-step { opacity: 0; transform: translateY(20px); transition: 0.8s ease-out; }
+    .story-step.visible { opacity: 1; transform: translateY(0); }
+.ritual-preview{
+position:absolute;
+background:white;
+padding:20px 25px;
+border-radius:4px;
+box-shadow:0 25px 60px rgba(0,0,0,0.15);
+pointer-events:none;
+opacity:0;
+transform:translateY(10px);
+transition:all .35s ease;
+font-size:.8rem;
+min-width:180px;
+}
+
+.ritual-preview.active{
+opacity:1;
+transform:translateY(0);
+}
+
+.ritual-preview h4{
+font-family:'Playfair Display';
+color:var(--primary);
+margin-bottom:5px;
+font-size:1rem;
+}
+
+.ritual-preview p{
+color:var(--soft-brown);
+}
+
+@keyframes heroZoom{
+0%{
+background-size:100%;
+}
+
+100%{
+background-size:110%;
+}
+}
+
+   @media (max-width: 1024px) {
+    .glass-panel { margin: 0 auto; }
+    .ritual-section { justify-content: center !important; text-align: center; }
+    .ingredient-story { grid-template-columns: 1fr; }
+    .method-container { flex-direction: column; }
+    .method-container::before { display: none; }
+    .method-step { margin-bottom: 40px; }
+}
+
+/* Cinematic Story Reveal */
+
+.story-step {
+opacity:0;
+transform:translateY(30px);
+transition: all 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+
+.story-step.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+.story-step:nth-child(1){transition-delay:.1s;}
+.story-step:nth-child(2){transition-delay:.25s;}
+.story-step:nth-child(3){transition-delay:.4s;}
+.story-step:nth-child(4){transition-delay:.55s;}
+.story-step:nth-child(5){transition-delay:.7s;}
+.story-step:nth-child(6){transition-delay:.85s;}
+.story-step:nth-child(7){transition-delay:1s;}
+
+.section-header::after{
+content:"";
+display:block;
+width:60px;
+height:2px;
+background:var(--accent);
+margin:25px auto 0;
+opacity:.6;
+}
+
+.philosophy{
+padding:140px 8%;
+background:var(--white);
+text-align:center;
+}
+
+.philosophy-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+margin-top:60px;
+}
+
+.philosophy-item{
+padding:40px;
+background:var(--secondary);
+border-radius:4px;
+transition:.4s;
+}
+
+.philosophy-item:hover{
+transform:translateY(-8px);
+box-shadow:var(--luxury-shadow);
+}
+
+.philosophy-item h3{
+font-family:'Playfair Display';
+margin-bottom:15px;
+color:var(--primary);
+}
+
+.brand-film{
+position:relative;
+height:80vh;
+overflow:hidden;
+}
+
+.film-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.film-overlay{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:white;
+max-width:700px;
+}
+
+.film-overlay h2{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.film-overlay p{
+font-size:1.1rem;
+font-weight:300;
+}
+
+.film-overlay p{
+font-size:1.1rem;
+font-weight:300;
+}
+
+/* Luxury Cursor */
+
+.luxury-cursor{
+position:fixed;
+width:18px;
+height:18px;
+border:2px solid var(--accent);
+border-radius:50%;
+pointer-events:none;
+transform:translate(-50%,-50%);
+z-index:9999;
+transition:transform .15s ease;
+mix-blend-mode:difference;
+}
+.clinical-section{
+padding:120px 8%;
+background:var(--white);
+text-align:center;
+}
+
+.clinical-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+margin-top:60px;
+}
+
+.clinical-item{
+padding:40px;
+background:var(--secondary);
+border-radius:4px;
+transition:.4s;
+}
+
+.clinical-item:hover{
+transform:translateY(-8px);
+box-shadow:var(--luxury-shadow);
+}
+
+.clinical-item h3{
+font-size:3rem;
+font-family:'Playfair Display';
+color:var(--accent);
+margin-bottom:10px;
+}
+
+.clinical-note{
+margin-top:40px;
+font-size:.8rem;
+letter-spacing:1px;
+color:var(--soft-brown);
+text-transform:uppercase;
+}
+
+</style>
+
 </head>
-<body>
+<body id="page-body">
+<div id="luxury-loader">
+    <div class="loader-inner">
+        <h1>Latitude & Life — Global Luxury Skincare Rituals</h1>
+        <div class="loader-line"></div>
+    </div>
+</div>
 
-    <header>
-        <div class="container nav-flex">
-            <a href="#" class="logo">latitude & life</a>
-            <nav class="nav-desktop">
-                <a href="#thesis" class="nav-link">The Thesis</a>
-                <a href="#framework" class="nav-link">Architecture</a>
-                <a href="#cohort" class="nav-link">Phase 01</a>
-                <a href="#cohort" class="btn btn-solid" style="padding: 0.8rem 2.5rem;">Apply for Waitlist</a>
-            </nav>
-        </div>
-    </header>
+<nav>
+    <a href="/home" class="logo nav-route" aria-label="Latitude and Life Homepage">Latitude & Life</a>
+    <div class="nav-links">
+        <a href="/home" class="nav-route">Home</a>
+        <a href="/collection" class="nav-route">Collection</a>
+        <a href="/journal" class="nav-route">Journal</a>
+        <a href="/our-story" class="nav-route">Our Story</a>
+    </div>
+</nav>
 
-    <section class="hero">
-        <div class="container hero-content reveal">
-            <span class="framework-num" style="margin-bottom: 1.5rem; display: block;">Institutional Performance Infrastructure</span>
-            <h1>Metabolic Regulation <br>Creates Performance <br><span style="font-style: italic;">Freedom.</span></h1>
-            <p>For individuals whose cognitive output is non-negotiable. We replace dietary noise with a structured metabolic operating system designed for the professional environment.</p>
-            
-            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                <a href="#cohort" class="btn btn-solid">Apply for Founding Cohort</a>
-                <a href="#framework" class="btn btn-outline">Review Architecture</a>
-            </div>
-        </div>
-        <div class="hero-visual"></div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section id="thesis" class="section-padding">
-        <div class="container thesis-grid reveal">
-            <div class="thesis-image"></div>
-            <div>
-                <span class="framework-num">Biological Infrastructure</span>
-                <h2 style="font-size: 3.5rem; margin: 2rem 0;">Structure Over <br>Optimization.</h2>
-                <p style="margin-bottom: 2.5rem;">The Latitude Regulation Architecture™ does not dictate caloric restriction or dietary exclusion. You may maintain your dietary preferences; we regulate the mechanical and temporal infrastructure of how the system processes them. Performance longevity is the byproduct of volatility elimination.</p>
-                
-                <div class="stat-box">
-                    <h4>Validation Status</h4>
-                    <p>Internal validation study in progress. Structured biometric review underway to establish Phase 02 performance benchmarks.</p>
-                </div>
-            </div>
+<main id="view-container">
+    
+    <section class="hero" id="home-section">
+        <div class="reveal hero-content">
+            <p class="hero-label">Global Beauty Rituals</p>
+            <h1>Latitude & Life</h1>
+            <p>Luxury skincare inspired by ancient beauty traditions from the world's most iconic destinations.</p>
+            <a href="/collection" class="btn nav-route" aria-label="Explore Collection">Explore the Collection</a>
         </div>
     </section>
 
-    <section id="framework" class="section-padding bg-alt">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 8rem;" class="reveal">
-                <span class="framework-num">The Protocol</span>
-                <h2 style="font-size: 3.8rem; margin-top: 1rem;">The Regulation Architecture™</h2>
+<section class="brand-film">
+
+<video autoplay muted loop playsinline preload="metadata" class="film-video" poster="brand-film-poster.jpg">
+<source src="brand-film.mp4" type="video/mp4">
+</video>
+
+<div class="film-overlay">
+<h2>Beauty Across Latitudes</h2>
+<p>Discover rituals inspired by the world's most iconic destinations.</p>
+</div>
+
+</section>
+
+    <section class="collection" id="collection-section">
+        <div class="section-header reveal">
+            <h2>The Ritual Collection</h2>
+            <p>Curated botanical wisdom from across the parallels.</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card reveal">
+                <a href="/ibiza-glow-serum" class="nav-route">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop">
+                    <h3>Ibiza Glow Serum</h3>
+                    <div class="location">Ibiza, Spain</div>
+                    <div class="price">₹999</div>
+                </a>
             </div>
-            
-            <div class="framework-grid reveal">
-                <div class="framework-item">
-                    <span class="framework-num">01</span>
-                    <h3>Circadian Structural Timing</h3>
-                    <p>Aligning ingestion and exertion windows with endogenous hormonal cycles for peak metabolic efficiency.</p>
-                </div>
-                <div class="framework-item">
-                    <span class="framework-num">02</span>
-                    <h3>Fueled Output Principle</h3>
-                    <p>Caloric deployment specifically architected to support prolonged high-intensity cognitive phases.</p>
-                </div>
-                <div class="framework-item">
-                    <span class="framework-num">03</span>
-                    <h3>Protein Anchor Discipline</h3>
-                    <p>Establishing structural amino acid baselines to dampen glycemic volatility and preserve hormonal integrity.</p>
-                </div>
-                <div class="framework-item">
-                    <span class="framework-num">04</span>
-                    <h3>Structured Meal Spacing</h3>
-                    <p>Managing non-ingestion intervals to allow for complete gastric clearance and insulin sensitivity recovery.</p>
-                </div>
-                <div class="framework-item">
-                    <span class="framework-num">05</span>
-                    <h3>Oral-Phase Optimization</h3>
-                    <p>The mechanical activation of digestion through mastication precision and salivary enzymatic signaling.</p>
-                </div>
-                <div class="framework-item">
-                    <span class="framework-num">06</span>
-                    <h3>Environmental Control</h3>
-                    <p>Mitigating exogenous stressors—light pollution and acoustic disruption—that destabilize metabolic baselines.</p>
-                </div>
+            <div class="product-card reveal">
+                <a href="/kyoto-rice-cleanser" class="nav-route">
+                    <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?q=80&w=800&auto=format&fit=crop (https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?q=80&w=800&auto=format&fit=crop)" loading="lazy" alt="Kyoto Rice Cleanser">
+                    <h3>Kyoto Rice Cleanser</h3>
+                    <div class="location">Kyoto, Japan</div>
+                    <div class="price">Coming Soon</div>
+                </a>
+            </div>
+            <div class="product-card reveal">
+                <a href="/seoul-glass-toner" class="nav-route">
+                    <img src="https://images.unsplash.com/photo-1556228578-8c7c0f44bb0b?q=80&w=800&auto=format&fit=crop (https://images.unsplash.com/photo-1556228578-8c7c0f44bb0b?q=80&w=800&auto=format&fit=crop)" loading="lazy" alt="Seoul Glass Skin Toner">
+                    <h3>Seoul Glass Skin Toner</h3>
+                    <div class="location">Seoul, Korea</div>
+                    <div class="price">Coming Soon</div>
+                </a>
+            </div>
+            <div class="product-card reveal">
+                <a href="/paris-rose-mist" class="nav-route">
+                    <img src="https://images.unsplash.com/photo-1590439474864-3da726ffdb0c?q=80&w=800&auto=format&fit=crop (https://images.unsplash.com/photo-1590439474864-3da726ffdb0c?q=80&w=800&auto=format&fit=crop)" loading="lazy" alt="Paris Rose Mist">
+                    <h3>Paris Rose Mist</h3>
+                    <div class="location">Paris, France</div>
+                    <div class="price">Coming Soon</div>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="section-padding mechanics-section">
-        <div class="container mechanics-flex reveal">
-            <div>
-                <span class="framework-num">Mechanical Efficiency</span>
-                <h2 style="font-size: 3.5rem; margin: 2rem 0;">The Digestive <br>Regulation Framework</h2>
-                <p style="margin-bottom: 3rem;">Ingestion control is a mechanical discipline. We regulate the oral phase to modulate the systemic response, ensuring post-prandial cognitive clarity remains intact.</p>
-                
-                <div class="mechanics-visual">
-                    <img src="https://media.istockphoto.com/id/1301830934/photo/healthy-gut.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZJeKhFq0po1BcbUO2sjnTuSsWVv6fHbzizg4BQT73Ko=" alt="Mechanical Analysis of Organic Texture">
-                </div>
-                <p class="mechanics-caption">Mechanical ingestion determines systemic response.</p>
+    <section class="ritual-method reveal">
+        <div class="section-header">
+            <h2>The Ritual Method</h2>
+            <p>A sequential journey to skin health.</p>
+        </div>
+        <div class="method-container">
+            <div class="method-step">
+                <div class="step-number">01</div>
+                <h4>Step 1 — Cleanse</h4>
+                <h3>Kyoto Rice Cleanser</h3>
             </div>
-            <ul class="mechanics-list">
-                <li>
-                    <strong>Surface Area Optimization</strong>
-                    <p>Precision mastication increases nutrient exposure for enzymatic activation, reducing systemic inflammatory load.</p>
-                </li>
-                <li>
-                    <strong>Glycemic Modulation</strong>
-                    <p>Controlling the temporal pace of ingestion to flatten the glucose curve and preserve executive function.</p>
-                </li>
-                <li>
-                    <strong>Parasympathetic Dominance</strong>
-                    <p>Utilizing the digestive stability window to switch the nervous system into a recovery-oriented state.</p>
-                </li>
-                <li>
-                    <strong>Enzymatic Integrity</strong>
-                    <p>Strategic liquid sequencing to prevent gastric dilution and maintain digestive mechanical efficiency.</p>
-                </li>
+            <div class="method-step">
+                <div class="step-number">02</div>
+                <h4>Step 2 — Tone</h4>
+                <h3>Seoul Glass Skin Toner</h3>
+            </div>
+            <div class="method-step">
+                <div class="step-number">03</div>
+                <h4>Step 3 — Treat</h4>
+                <h3>Ibiza Glow Serum</h3>
+            </div>
+            <div class="method-step">
+                <div class="step-number">04</div>
+                <h4>Step 4 — Hydrate</h4>
+                <h3>Santorini Blue Cream</h3>
+            </div>
+        </div>
+    </section>
+
+<section class="philosophy reveal">
+
+<div class="section-header">
+<h2>The Ritual Philosophy</h2>
+<p>Where geography meets skincare science.</p>
+</div>
+
+<div class="philosophy-grid">
+
+<div class="philosophy-item">
+<h3>Global Inspiration</h3>
+<p>Each formula draws inspiration from historic beauty traditions shaped by climate, culture, and geography.</p>
+</div>
+
+<div class="philosophy-item">
+<h3>Botanical Intelligence</h3>
+<p>Ingredients are carefully selected for their natural compatibility with skin health and long-term nourishment.</p>
+</div>
+
+<div class="philosophy-item">
+<h3>Modern Formulation</h3>
+<p>Ancient rituals meet modern skincare science to create effective and luxurious daily rituals.</p>
+</div>
+
+</div>
+
+</section>
+
+    <section class="map-section" id="map-section">
+        <div class="section-header reveal">
+            <h2>Explore the Rituals</h2>
+            <p>Immersive navigation through our botanical parallels.</p>
+        </div>
+        <div class="globe-wrapper reveal">
+            <div class="globe-rotating-container" id="globe-container">
+                <div class="globe">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg">
+</div>
+                    <path d="M150,150 Q200,100 250,150 T350,150 T450,180 T550,150 T650,140 T750,160 T850,200 L850,350 Q750,400 650,350 T500,380 T350,350 T150,350 Z" opacity="0.1"/>
+                    <path d="M180,150 Q250,100 320,180 T400,250 T350,380 T200,350 T150,250 Z" fill="#e8ded2"/>
+                    <path d="M450,150 Q520,120 580,180 T600,300 T500,420 T420,300 Z" fill="#e8ded2"/>
+                    <path d="M650,150 Q800,120 900,200 T850,380 T700,400 T650,250 Z" fill="#e8ded2"/>
+                </svg>
+<div class="marker" data-location="Ibiza, Spain" data-product="Ibiza Glow Serum" style="top:38%; left:47%;" id="marker-ibiza"></div>
+
+<div class="marker" data-location="Paris, France" data-product="Paris Rose Mist" style="top:28%; left:48%;" id="marker-paris"></div>
+
+<div class="marker" data-location="Santorini, Greece" data-product="Santorini Blue Cream" style="top:40%; left:52%;" id="marker-santorini"></div>
+
+<div class="marker" data-location="Seoul, Korea" data-product="Seoul Glass Skin Toner" style="top:38%; left:20%;" id="marker-seoul"></div>
+
+<div class="marker" data-location="Kyoto, Japan" data-product="Kyoto Rice Cleanser" style="top:39%; left:86%;" id="marker-kyoto"></div>
+            </div>
+        </div>
+<div class="ritual-preview" id="ritual-preview">
+<h4 id="preview-location"></h4>
+<p id="preview-product"></p>
+</div>
+    </section>
+
+    <section class="ritual-section" id="ibiza" style="background-image: url('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=2000&auto=format&fit=crop (https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=2000&auto=format&fit=crop)');">
+        <div class="giant-title">IBIZA</div>
+        <div class="glass-panel reveal">
+            <span class="coordinates story-step">38.9067° N | 1.4206° E</span>
+            <h2 class="story-step">Ibiza Glow Serum</h2>
+            <p class="story-step">Mediterranean Radiance. A nutrient-dense serum that bottles the golden hour glow of the Balearic Islands.</p>
+            <div class="ingredient-story story-step">
+                <div class="ingredient-card">
+                    <h4>Balearic Citrus</h4>
+                    <p>Vitamin C powerhouse that clarifies and brightens skin tone.</p>
+                </div>
+                <div class="ingredient-card">
+                    <h4>Sea Minerals</h4>
+                    <p>Sourced from deep Mediterranean currents for barrier repair.</p>
+                </div>
+                <div class="ingredient-card">
+                    <h4>Algae Extract</h4>
+                    <p>Protecting skin from environmental oxidants naturally.</p>
+                </div>
+            </div>
+            <ul class="benefits-list story-step">
+                <li>Instant Golden Hour Glow</li>
+                <li>Plumps and Hydrates Skin</li>
+                <li>Sustainably Harvested Botanicals</li>
             </ul>
+            <ul class="trust-checklist story-step">
+                <li><span>✔</span> Dermatologically Tested</li>
+                <li><span>✔</span> Clean Beauty Formula</li>
+                <li><span>✔</span> Cruelty Free</li>
+            </ul>
+            <span class="price-highlight story-step">₹999</span>
+            <span class="scarcity-msg story-step">First Launch Batch • Limited Availability</span>
+            <button class="btn-gold story-step">Add to Cart</button>
         </div>
     </section>
 
-    <section class="section-padding container">
-        <div class="exclusion-grid reveal">
-            <div>
-                <span class="framework-num" style="color: var(--accent);">Selective Protocol</span>
-                <h2 style="font-size: 3rem; margin-top: 1rem;">Who This Is <br>Not For</h2>
-            </div>
-            <div>
-                <ul class="exclusion-list">
-                    <li>Individuals seeking short-term fat loss or "detox" clichés.</li>
-                    <li>Those dependent on supplement-heavy or "hack"-based protocols.</li>
-                    <li>Professionals unwilling to adopt structured behavioral discipline.</li>
-                    <li>Participants looking for passive, outsourced health management.</li>
-                </ul>
-                <p style="margin-top: 4rem; font-weight: 500; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 2.5rem; color: var(--accent);">
-                    Latitude is designed for high-output professionals committed to metabolic resilience.
-                </p>
-            </div>
+    <section class="reviews-section reveal">
+        <div class="section-header">
+            <h2>Early Ritual Reviews</h2>
         </div>
-    </section>
-
-    <section id="cohort" class="section-padding">
-        <div class="container reveal">
-            <div class="cohort-card">
-                <div class="cohort-grid">
-                    <div>
-                        <span class="framework-num">Enrollment Phase 01</span>
-                        <h2 style="font-size: 3.5rem; margin: 2rem 0;">Founding Regulation Cohort</h2>
-                        <p style="margin-bottom: 3rem;">A 4-week structured metabolic protocol for 12 participants. A rigorous, application-based behavioral system for establishing the Baseline Regulation Architecture™.</p>
-                        <div class="cohort-visual"></div>
-                    </div>
-                    
-                    <div>
-                        <div class="cohort-meta">
-                            <div class="meta-item">
-                                <span>Participants</span>
-                                <strong>12 Maximum</strong>
-                            </div>
-                            <div class="meta-item">
-                                <span>Cycle</span>
-                                <strong>4 Weeks</strong>
-                            </div>
-                            <div class="meta-item">
-                                <span>Commitment</span>
-                                <strong>Biometric Logging</strong>
-                            </div>
-                            <div class="meta-item">
-                                <span>Access</span>
-                                <strong>Waitlist Only</strong>
-                            </div>
-                        </div>
-
-                        <form class="waitlist-form" id="applicationForm">
-                            <div class="input-group">
-                                <label>Full Name</label>
-                                <input type="text" required>
-                            </div>
-                            <div class="input-group">
-                                <label>Professional Role</label>
-                                <input type="text" placeholder="e.g. Managing Director" required>
-                            </div>
-                            <div class="input-group">
-                                <label>Professional Email</label>
-                                <input type="email" required>
-                            </div>
-                            <div class="input-group">
-                                <label>Primary Challenge</label>
-                                <select required>
-                                    <option value="">Select Focus</option>
-                                    <option>Cognitive Output Volatility</option>
-                                    <option>Systemic Recovery Fatigue</option>
-                                    <option>Metabolic Instability</option>
-                                    <option>Hormonal Resilience</option>
-                                </select>
-                            </div>
-                            <div class="input-group">
-                                <label>Current Wake Time</label>
-                                <input type="text" placeholder="e.g. 05:30 AM">
-                            </div>
-                            <div class="input-group">
-                                <label>Training Frequency (/WK)</label>
-                                <input type="number" min="0" max="21">
-                            </div>
-                            <div class="input-group full-width">
-                                <label>Performance Objectives</label>
-                                <textarea rows="3" placeholder="Describe the current metabolic constraints on your professional output..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-solid full-width">Apply for Founding Cohort Waitlist</button>
-                        </form>
-                    </div>
-                </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <p>"My skin started glowing within a week. It feels like Mediterranean sunshine in a bottle."</p>
+                <div class="review-author">— Aanya, Mumbai</div>
+            </div>
+            <div class="review-card">
+                <p>"Lightweight and luxurious. My daily ritual now."</p>
+                <div class="review-author">— Meera, Delhi</div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 7rem; margin-bottom: 8rem;">
-                <div>
-                    <div class="logo" style="margin-bottom: 2.5rem;">latitude & life</div>
-                    <p style="opacity: 0.8; max-width: 450px;">Architecting the metabolic infrastructure for global leaders. Prepared for longitudinal biometric publication.</p>
-                </div>
-                <div>
-                    <h5 style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 3px; margin-bottom: 2.5rem; color: var(--accent);">Infrastructure</h5>
-                    <p><a href="#framework" style="display: block; margin-bottom: 1rem; text-decoration: none; color: var(--text-light);">Architecture</a></p>
-                    <p><a href="#cohort" style="display: block; margin-bottom: 1rem; text-decoration: none; color: var(--text-light);">Founding Cohort</a></p>
-                    <p><a href="#" style="display: block; margin-bottom: 1rem; text-decoration: none; color: var(--text-light);">Biometric Case Studies</a></p>
-                </div>
-                <div>
-                    <h5 style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 3px; margin-bottom: 2.5rem; color: var(--accent);">Global Advisory</h5>
-                    <p style="margin-bottom: 1rem; color: var(--text-light);">Direct: +91 9599949996</p>
-                    <p style="color: var(--text-light);">connect@latitudeandlife.com</p>
-                </div>
+    <section class="ritual-section" id="kyoto" style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2000&auto=format&fit=crop (https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=2000&auto=format&fit=crop)');">
+        <div class="giant-title">KYOTO</div>
+        <div class="glass-panel reveal">
+            <span class="coordinates">35.0116° N | 135.7681° E</span>
+            <h2>Kyoto Rice Cleanser</h2>
+            <p>The Art of Pureté. Utilizing fermented rice water to create a porcelain finish inspired by Geisha wisdom.</p>
+            <div class="badge-soon" style="margin-top: 20px; color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 15px; display: inline-block;">COMING SOON</div>
+        </div>
+    </section>
+
+    <section class="ritual-section" id="seoul" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2000&auto=format&fit=crop (https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2000&auto=format&fit=crop)');">
+        <div class="giant-title">SEOUL</div>
+        <div class="glass-panel reveal">
+            <span class="coordinates">37.5665° N | 126.9780° E</span>
+            <h2>Seoul Glass Skin Toner</h2>
+            <p>Crystal Clarity. A deep infusion of hyaluronic acids inspired by the high-tech moisture rituals of Gangnam.</p>
+            <div class="badge-soon" style="margin-top: 20px; color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 15px; display: inline-block;">COMING SOON</div>
+        </div>
+    </section>
+
+    <section class="ritual-section" id="paris" style="background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2000&auto=format&fit=crop (https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2000&auto=format&fit=crop)');">
+        <div class="giant-title">PARIS</div>
+        <div class="glass-panel reveal">
+            <span class="coordinates">48.8566° N | 2.3522° E</span>
+            <h2>Paris Rose Mist</h2>
+            <p>Elegance in a Bottle. Steam-distilled Damask roses for an immediate floral revive.</p>
+            <div class="badge-soon" style="margin-top: 20px; color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 15px; display: inline-block;">COMING SOON</div>
+        </div>
+    </section>
+
+    <section class="ritual-section" id="santorini" style="background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000&auto=format&fit=crop (https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2000&auto=format&fit=crop)');">
+        <div class="giant-title">SANTORINI</div>
+        <div class="glass-panel reveal">
+            <span class="coordinates">36.3932° N | 25.4615° E</span>
+            <h2>Santorini Blue Cream</h2>
+            <p>Deep Aegean Minerals. A volcanic hydration cream that captures the moisture of the Greek islands.</p>
+            <div class="badge-soon" style="margin-top: 20px; color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 5px 15px; display: inline-block;">COMING SOON</div>
+        </div>
+    </section>
+
+<section class="clinical-section reveal">
+
+<div class="section-header">
+<h2>Clinical Results</h2>
+<p>Science-backed skincare inspired by global rituals.</p>
+</div>
+
+<div class="clinical-grid">
+
+<div class="clinical-item">
+<h3>94%</h3>
+<p>Reported brighter skin tone after 14 days</p>
+</div>
+
+<div class="clinical-item">
+<h3>91%</h3>
+<p>Experienced improved hydration levels</p>
+</div>
+
+<div class="clinical-item">
+<h3>89%</h3>
+<p>Noticed smoother skin texture</p>
+</div>
+
+</div>
+
+<div class="clinical-note">
+Dermatologically tested • Clean beauty formulation • Cruelty free
+</div>
+
+</section>
+    <section class="ingredient-library" id="ingredients-section">
+        <div class="section-header reveal">
+            <h2>Ingredient Library</h2>
+            <p>Pure, potent, and sourced with global intention.</p>
+        </div>
+        <div class="library-grid">
+            <div class="library-item reveal">
+                <h3>Rice Water</h3>
+                <p>Ancient Japanese staple that smooths and brightens texture.</p>
             </div>
-            
-            <div class="divider"></div>
-            
-            <div style="padding-top: 4rem; display: flex; justify-content: space-between; font-size: 0.75rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 2px;">
-                <p>&copy; 2026 Latitude & Life. Serving EMEA and Asia Pacific.</p>
-                <p>Metabolic Performance Longevity</p>
+            <div class="library-item reveal">
+                <h3>Sea Minerals</h3>
+                <p>Concentrated ocean salts for deep cellular hydration.</p>
+            </div>
+            <div class="library-item reveal">
+                <h3>Damask Rose</h3>
+                <p>Hand-picked at dawn to preserve calming essential oils.</p>
+            </div>
+            <div class="library-item reveal">
+                <h3>Balearic Algae</h3>
+                <p>Protective veil against modern urban pollution.</p>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('active');
-            });
-        }, { threshold: 0.1 });
+    <section class="journal" id="journal-section">
+        <div class="section-header reveal">
+            <h2>The Beauty Journal</h2>
+        </div>
+        <div class="journal-grid">
+            <div class="journal-card reveal">
+                <img src="https://images.unsplash.com/photo-1505944270255-bd2b68af6422?q=80&w=800&auto=format&fit=crop (https://images.unsplash.com/photo-1505944270255-bd2b68af6422?q=80&w=800&auto=format&fit=crop)" loading="lazy" alt="Mediterranean Ritual">
+                <div class="journal-content">
+                    <h3>Mediterranean Glow Ritual</h3>
+                    <p>How the sunlight and sea shape a radiant philosophy.</p>
+                </div>
+            </div>
+            <div class="journal-card reveal">
+                <img src="https://images.unsplash.com/photo-1542332213-31f87348057f?q=80&w=800&auto=format&fit=crop (https://images.unsplash.com/photo-1542332213-31f87348057f?q=80&w=800&auto=format&fit=crop)" loading="lazy" alt="Kyoto Heritage">
+                <div class="journal-content">
+                    <h3>The Secret of Kyoto Rice</h3>
+                    <p>The science behind traditional fermentation rituals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    <section class="story reveal" id="story-section">
+        <h2>The Global Ritual</h2>
+        <p>"Latitude & Life celebrates beauty rituals from around the world. We believe that skincare is more than a routine—it is a journey across borders."</p>
+    </section>
 
-        document.getElementById('applicationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert("Application received. The Phase 01 Cohort is currently under biometric validation review. You will be contacted via professional email.");
+    <section class="newsletter reveal">
+        <h2>Unlock Your Ritual</h2>
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Your Email Address" required>
+            <button type="submit" class="btn" style="background:var(--primary); color:var(--white);">Subscribe</button>
+        </form>
+    </section>
+
+    <section class="contact reveal" id="contact-section">
+        <div class="section-header">
+            <h2>Connect With Us</h2>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-submit" style="background:var(--primary); color:var(--white); padding: 20px; text-transform: uppercase; letter-spacing: 2px; border: none; cursor: pointer;">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="logo">Latitude & Life</div>
+    <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Pinterest</a>
+    </div>
+    <p class="copyright" style="font-size: 0.65rem; opacity: 0.4; letter-spacing: 1.5px;">&copy; 2026 Latitude & Life. Authentic. Sustainable. Cinematic Beauty.</p>
+</footer>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+{
+"@type": "Question",
+"name": "What is Latitude & Life skincare?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Latitude & Life is a luxury skincare brand inspired by beauty rituals from iconic global destinations such as Ibiza, Kyoto, and Paris."
+}
+},
+{
+"@type": "Question",
+"name": "Are Latitude & Life products clean beauty?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Yes. Latitude & Life formulations use botanical ingredients, dermatologically tested formulas, and cruelty-free practices."
+}
+},
+{
+"@type": "Question",
+"name": "Which product should I start with?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "The Ibiza Glow Serum is a perfect starting point for radiant and hydrated skin."
+}
+}
+]
+}
+</script>
+
+<script>
+const cursor = document.querySelector(".luxury-cursor")
+
+document.addEventListener("mousemove",(e)=>{
+
+cursor.style.left = e.clientX+"px"
+cursor.style.top = e.clientY+"px"
+
+})
+
+document.querySelectorAll("a,button,.marker").forEach(el=>{
+
+el.addEventListener("mouseenter",()=>{
+
+cursor.style.transform="translate(-50%,-50%) scale(2)"
+
+})
+
+el.addEventListener("mouseleave",()=>{
+
+cursor.style.transform="translate(-50%,-50%) scale(1)"
+
+})
+
+})
+const preview = document.getElementById("ritual-preview")
+const locationText = document.getElementById("preview-location")
+const productText = document.getElementById("preview-product")
+
+document.querySelectorAll(".marker").forEach(marker=>{
+
+marker.addEventListener("mouseenter",(e)=>{
+
+locationText.textContent = marker.dataset.location
+productText.textContent = marker.dataset.product
+
+preview.classList.add("active")
+
+})
+
+marker.addEventListener("mousemove",(e)=>{
+
+preview.style.left = e.pageX + 15 + "px"
+preview.style.top = e.pageY + 15 + "px"
+
+})
+
+marker.addEventListener("mouseleave",()=>{
+
+preview.classList.remove("active")
+
+})
+
+})
+    // SPA NAVIGATION SYSTEM
+    const routes = {
+        '/home': 'home-section',
+        '/collection': 'collection-section',
+        '/journal': 'journal-section',
+        '/our-story': 'story-section',
+        '/ibiza-glow-serum': 'ibiza',
+        '/kyoto-rice-cleanser': 'kyoto',
+        '/seoul-glass-toner': 'seoul',
+        '/paris-rose-mist': 'paris',
+        '/santorini-blue-cream': 'santorini'
+    };
+
+    const markerPaths = {
+        'marker-ibiza': '/ibiza-glow-serum',
+        'marker-kyoto': '/kyoto-rice-cleanser',
+        'marker-seoul': '/seoul-glass-toner',
+        'marker-paris': '/paris-rose-mist',
+        'marker-santorini': '/santorini-blue-cream'
+    };
+
+    function navigate(path, isPopState = false) {
+        const body = document.getElementById('page-body');
+        const targetId = routes[path] || 'home-section';
+        const targetElement = document.getElementById(targetId);
+
+        body.style.opacity = 0;
+        
+        setTimeout(() => {
+            if (targetElement) {
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const top = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                window.scrollTo({ top, behavior: 'auto' });
+            }
+            if (!isPopState) window.history.pushState({}, '', path);
+            body.style.opacity = 1;
+        }, 400);
+    }
+
+    document.addEventListener('click', (e) => {
+        const routeLink = e.target.closest('.nav-route');
+        if (routeLink) {
+            const path = routeLink.getAttribute('href');
+            if (path && path.startsWith('/')) {
+                e.preventDefault();
+                navigate(path);
+            }
+        }
+        if (e.target.classList.contains('marker')) {
+
+const marker = e.target
+const path = markerPaths[marker.id]
+
+if(path){
+
+marker.classList.add("active")
+
+const globe = document.getElementById("globe-container")
+
+globe.style.transition = "transform 1.5s ease"
+globe.style.transform = "scale(1.2) rotateY(20deg)"
+
+setTimeout(()=>{
+
+navigate(path)
+
+},900)
+
+setTimeout(()=>{
+
+globe.style.transform = "scale(1) rotateY(0deg)"
+marker.classList.remove("active")
+
+},2000)
+
+}
+
+}
+    });
+
+    window.onpopstate = () => navigate(window.location.pathname, true);
+
+    // INTERSECTION OBSERVERS FOR REVEAL EFFECTS
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('active');
         });
-    </script>
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    const storyStepObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.story-step').forEach(el => storyStepObserver.observe(el));
+const ritualSections = document.querySelectorAll(".ritual-section")
+
+const ritualObserver = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("visible")
+
+}
+
+})
+
+},{
+threshold:.25
+})
+
+ritualSections.forEach(section=>{
+
+ritualObserver.observe(section)
+
+})
+
+    // PARALLAX TITLES SCROLL LOGIC
+    window.addEventListener('scroll', () => {
+        const scroll = window.pageYOffset;
+        
+        document.querySelectorAll('.giant-title').forEach((title, index) => {
+            // Subtle centered parallax movement
+            const speed = 0.05;
+            const moveX = scroll * speed;
+            // Maintain central transform plus subtle offset
+            title.style.transform = `translate(calc(-50% + ${moveX}px), -50%)`;
+        });
+
+        const nav = document.querySelector('nav');
+        if (scroll > 50) {
+            nav.style.padding = "15px 6%";
+        } else {
+            nav.style.padding = "30px 6%";
+        }
+    });
+
+    // INITIAL LOAD
+    window.onload = () => {
+        const path = window.location.pathname;
+        if (path === '/' || path === '') {
+            window.history.replaceState({}, '', '/home');
+        } else {
+            navigate(path, true);
+        }
+    };
+// SAFE LOADER REMOVAL
+
+const loader = document.getElementById("luxury-loader");
+
+setTimeout(function(){
+
+if(loader){
+
+loader.style.opacity = "0";
+
+setTimeout(function(){
+
+loader.style.display = "none";
+
+},800);
+
+}
+
+},2000);
+
+const hero = document.querySelector(".hero")
+const heroContent = document.querySelector(".hero-content")
+
+hero.addEventListener("mousemove",(e)=>{
+
+const x = (window.innerWidth / 2 - e.pageX) / 40
+const y = (window.innerHeight / 2 - e.pageY) / 40
+
+heroContent.style.transform = `translate(${x}px, ${y}px)`
+
+})
+
+hero.addEventListener("mouseleave",()=>{
+
+heroContent.style.transform = `translate(0,0)`
+
+})
+
+
+</script>
+
+<div class="luxury-cursor"></div>
 </body>
 </html>
