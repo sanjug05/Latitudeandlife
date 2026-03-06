@@ -313,6 +313,23 @@ box-shadow:0 10px 25px rgba(0,0,0,0.06);
 
     .logo { font-size: 1.6rem; letter-spacing: 3px; color: var(--primary); font-weight: 600; text-transform: uppercase; }
     .nav-links { display: flex; gap: 48px; }
+.logo { 
+font-size: 1.6rem; 
+letter-spacing: 3px; 
+color: var(--primary); 
+font-weight: 600; 
+text-transform: uppercase; 
+}
+
+/* ADD THIS RIGHT BELOW */
+
+.nav-logo{
+height:28px;
+width:auto;
+display:block;
+}
+
+.nav-links { display: flex; gap: 48px; }
     .nav-links a { font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
     .nav-links a:hover { color: var(--accent); }
 
@@ -1034,7 +1051,9 @@ pointer-events:none;
 </div>
 
 <nav>
-    <a href="#home" class="logo nav-route" aria-label="Latitude and Life Homepage">Latitude & Life</a>
+    <a href="#home" class="logo nav-route" aria-label="Latitude and Life Homepage">
+<img src="ll-logo.png" alt="Latitude & Life Logo" class="nav-logo">
+</a>
     <div class="nav-links">
         <a href="#home" class="nav-route">Home</a>
         <a href="#collection" class="nav-route">Collection</a>
@@ -1418,7 +1437,11 @@ to bring you a global, sophisticated glow.”</p>
 <div id="thankyou-message" style="display:none; margin-top:30px; color:#2A1619; font-weight:500;">
 Thank you for joining the Latitude & Life Ritual.
 </div>
-        <h2>Unlock Your Ritual</h2>
+        <section class="newsletter reveal">
+
+<img src="ll-logo.png" class="newsletter-logo" alt="Latitude & Life">
+
+<h2>Unlock Your Ritual</h2>
 <form class="newsletter-form" id="newsletterForm">
 <input type="email" name="email" placeholder="Your Email Address" required>
 
@@ -1448,7 +1471,9 @@ Thank you for reaching out. Our team will respond shortly.
 
 <footer>
 <div class="footer-brand-bg">Latitude & Life</div>
-    <div class="logo">L</div>
+    <div class="footer-logo">
+<img src="ll-logo.png" alt="Latitude & Life" style="height:28px;">
+</div>
     <div class="social-links">
         <a href="#">Instagram</a>
         <a href="#">YouTube</a>
