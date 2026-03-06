@@ -1415,21 +1415,32 @@ to bring you a global, sophisticated glow.”</p>
     </section>
 
     <section class="newsletter reveal">
+<div id="thankyou-message" style="display:none; margin-top:30px; color:#2A1619; font-weight:500;">
+Thank you for joining the Latitude & Life Ritual.
+</div>
         <h2>Unlock Your Ritual</h2>
-        <form class="newsletter-form" onsubmit="event.preventDefault();">
-            <input type="email" placeholder="Your Email Address" required>
-            <button type="submit" class="btn" style="background:var(--primary); color:var(--white);">Subscribe</button>
-        </form>
+<form class="newsletter-form" id="newsletterForm">
+<input type="email" name="email" placeholder="Your Email Address" required>
+
+<button type="submit" class="btn" style="background:var(--primary); color:var(--white);">
+Subscribe
+</button>
+</form>
     </section>
 
     <section class="contact reveal" id="contact-section">
         <div class="section-header">
             <h2>Connect With Us</h2>
         </div>
-        <form class="contact-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <textarea rows="6" placeholder="Your Message" required></textarea>
+        <form class="contact-form" id="contactForm">
+<div id="contact-success" style="display:none; margin-top:25px; color:#2A1619;">
+Thank you for reaching out. Our team will respond shortly.
+</div>
+           <input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
             <button type="submit" class="btn-submit" style="background:var(--primary); color:var(--white); padding: 20px; text-transform: uppercase; letter-spacing: 2px; border: none; cursor: pointer;">Send Message</button>
         </form>
     </section>
@@ -1753,6 +1764,31 @@ loader.remove();
 }, 1200);
 
 });
+
+const newsletterForm = document.getElementById("newsletterForm")
+
+newsletterForm.addEventListener("submit", function(e){
+
+e.preventDefault()
+
+document.getElementById("thankyou-message").style.display = "block"
+
+newsletterForm.reset()
+
+})
+
+const contactForm = document.getElementById("contactForm")
+
+contactForm.addEventListener("submit", function(e){
+
+e.preventDefault()
+
+document.getElementById("contact-success").style.display = "block"
+
+contactForm.reset()
+
+})
+
 </script>
 
 <div class="luxury-cursor"></div>
