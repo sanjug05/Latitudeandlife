@@ -598,13 +598,19 @@ background-attachment:fixed;
         box-shadow: 0 40px 100px rgba(0,0,0,0.15);
         position: relative;
     }
+.glass-panel *{
+position:relative;
+z-index:2;
+}
 .ritual-logo{
 position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-height:240px;
+height:260px !important;
+width:auto;
 opacity:.12;
+z-index:1;
 pointer-events:none;
 }
     .ritual-section:nth-child(odd) { justify-content: flex-start; }
