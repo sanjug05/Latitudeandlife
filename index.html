@@ -93,6 +93,10 @@
 </script>
 
 <style>
+.logo img{
+height:75px;
+opacity:0.8;
+}
 .menu-icon,
 .search-icon{
 display:none;
@@ -1117,18 +1121,33 @@ pointer-events:none;
 /* Mobile Optimization */
 @media (max-width:768px){
 
-nav{
-justify-content:center;
-}
-
 .nav-links{
 display:none;
+}
+
+nav{
+display:flex;
+align-items:center;
+justify-content:center;
+position:fixed;
+width:94%;
+left:50%;
+transform:translateX(-50%);
+}
+
+.logo{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
 }
 
 .menu-icon,
 .search-icon{
 display:block;
 position:absolute;
+font-size:22px;
+color:#f5e6d3;
+cursor:pointer;
 }
 
 .menu-icon{
@@ -1140,54 +1159,6 @@ right:20px;
 }
 
 }
-@media (max-width: 768px) {
-
-@media (max-width:768px){
-
-nav a{
-display:none;
-}
-
-}
-nav{
-width:94%;
-padding:14px 18px;
-top:12px;
-}
-
-nav a{
-font-size:14px;
-}
-
-.glass-panel{
-padding:34px;
-max-width:90%;
-}
-
-.glass-panel h2{
-font-size:26px;
-}
-
-.glass-panel p{
-font-size:15px;
-line-height:1.6;
-}
-
-.coordinates{
-font-size:12px;
-}
-
-.giant-title{
-font-size:120px;
-opacity:0.05;
-}
-
-.ritual-section{
-padding:120px 20px;
-}
-
-}
-
 </style>
 
 </head>
@@ -1203,7 +1174,7 @@ padding:120px 20px;
     <a href="#home" class="logo nav-route" aria-label="Latitude and Life Homepage">
     <span class="menu-icon">☰</span>
 <img src="ll-logo.png" class="ritual-logo" alt="Latitude & Life"
-style="height:75px; position:absolute; top:50%; left:40px; transform:translateY(-10%); opacity:0.8;">
+style="height:75px; position:absolute; top:50%; left:40px; transform:translateY(-50%); opacity:0.8;">
 </a>
     <div class="nav-links">
         <a href="#home" class="nav-route">Home</a>
