@@ -93,6 +93,13 @@
 </script>
 
 <style>
+.menu-icon,
+.search-icon{
+display:none;
+font-size:20px;
+color:#f5e6d3;
+cursor:pointer;
+}
 .glass-panel li{
 color:#f5e6d3;
 }
@@ -1108,8 +1115,40 @@ pointer-events:none;
 }
 
 /* Mobile Optimization */
+@media (max-width:768px){
+
+nav{
+justify-content:center;
+}
+
+.nav-links{
+display:none;
+}
+
+.menu-icon,
+.search-icon{
+display:block;
+position:absolute;
+}
+
+.menu-icon{
+left:20px;
+}
+
+.search-icon{
+right:20px;
+}
+
+}
 @media (max-width: 768px) {
 
+@media (max-width:768px){
+
+nav a{
+display:none;
+}
+
+}
 nav{
 width:94%;
 padding:14px 18px;
@@ -1162,6 +1201,7 @@ padding:120px 20px;
 
 <nav>
     <a href="#home" class="logo nav-route" aria-label="Latitude and Life Homepage">
+    <span class="menu-icon">☰</span>
 <img src="ll-logo.png" class="ritual-logo" alt="Latitude & Life"
 style="height:75px; position:absolute; top:50%; left:40px; transform:translateY(-10%); opacity:0.8;">
 </a>
@@ -1171,6 +1211,9 @@ style="height:75px; position:absolute; top:50%; left:40px; transform:translateY(
         <a href="#journal" class="nav-route">Journal</a>
         <a href="#story" class="nav-route">Our Story</a>
     </div>
+
+    <span class="search-icon">🔍</span>
+
 </nav>
 
 <main id="view-container">
