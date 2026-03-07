@@ -93,6 +93,12 @@
 </script>
 
 <style>
+.glass-panel li{
+color:#f5e6d3;
+}
+.glass-panel li::marker{
+color:#e8d6b3;
+}
 .ritual-click{
 text-decoration:none;
 color:inherit;
@@ -645,8 +651,32 @@ pointer-events:none;
     /* Product Details */
     .ingredient-story { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 30px 0; }
     .ingredient-card { background: rgba(247, 243, 238, 0.5); padding: 15px; border-radius: 4px; border: 1px solid transparent; transition: var(--transition); }
-    .ingredient-card:hover { transform: translateY(-5px); background: var(--white); box-shadow: var(--luxury-shadow); border-color: var(--beige); }
-    .ingredient-card h4 { font-size: 0.85rem; color: var(--accent); margin-bottom: 8px; text-transform: uppercase; }
+.ingredient-card:hover {
+transform: translateY(-5px);
+background: rgba(245,230,211,0.96);
+box-shadow: var(--luxury-shadow);
+border-color: var(--beige);
+}
+.ingredient-card h4{
+color:#e8d6b3;
+}
+
+.ingredient-card p,
+.ingredient-card span
+.ingredient-card li{
+color:#f5e6d3;
+}
+
+.ingredient-card:hover h4,
+.ingredient-card:hover p,
+.ingredient-card:hover span
+.ingredient-card:hover li{
+color:#321b1f;
+}
+.ingredient-card:hover *{
+color:#321b1f !important;
+}
+   .ingredient-card h4 { font-size: 0.85rem; color: var(--accent); margin-bottom: 8px; text-transform: uppercase; }
     .ingredient-card p { font-size: 0.7rem; color: var(--soft-brown); line-height: 1.4; }
 
     .benefits-list { margin: 25px 0; }
@@ -1133,7 +1163,7 @@ padding:120px 20px;
 <nav>
     <a href="#home" class="logo nav-route" aria-label="Latitude and Life Homepage">
 <img src="ll-logo.png" class="ritual-logo" alt="Latitude & Life"
-style="height:75px; position:absolute; top:50%; left:40px; transform:translateY(-50%); opacity:0.8;">
+style="height:75px; position:absolute; top:50%; left:40px; transform:translateY(-10%); opacity:0.8;">
 </a>
     <div class="nav-links">
         <a href="#home" class="nav-route">Home</a>
@@ -1360,6 +1390,7 @@ Apply 2–3 drops to reveal Mediterranean-inspired radiance.
                 <li>Instant Golden Hour Glow</li>
                 <li>Plumps and Hydrates Skin</li>
                 <li>Sustainably Harvested Botanicals</li>
+
             </ul>
             <ul class="trust-checklist story-step">
                 <li><span>✔</span> Dermatologically Tested</li>
