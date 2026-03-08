@@ -93,44 +93,6 @@
 </script>
 
 <style>
-.mobile-menu{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100vh;
-background:#321b1f;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-gap:30px;
-z-index:2000;
-transform:translateY(-100%);
-transition:transform .4s ease;
-}
-
-.mobile-menu a{
-color:#f5e6d3;
-font-size:22px;
-letter-spacing:2px;
-text-decoration:none;
-}
-
-.mobile-menu.active{
-transform:translateY(0);
-}
-.logo img{
-height:75px;
-opacity:0.8;
-}
-.menu-icon,
-.search-icon{
-display:none;
-font-size:20px;
-color:#f5e6d3;
-cursor:pointer;
-}
 .glass-panel li{
 color:#f5e6d3;
 }
@@ -1146,68 +1108,48 @@ pointer-events:none;
 }
 
 /* Mobile Optimization */
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-.menu-icon,
-.search-icon{
-display:block;
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-font-size:22px;
-color:#f5e6d3;
-cursor:pointer;
-}
-
-.menu-icon{
-left:20px;
-}
-
-.search-icon{
-right:20px;
-}
-
-}
-@media (max-width:768px){
-
-.nav-links{
-display:none;
-}
 
 nav{
-display:flex;
-align-items:center;
-justify-content:center;
-position:fixed;
 width:94%;
-left:50%;
-transform:translateX(-50%);
+padding:14px 18px;
+top:12px;
 }
 
-.logo{
-position:absolute;
-left:50%;
-transform:translateX(-50%);
+nav a{
+font-size:14px;
 }
 
-.menu-icon,
-.search-icon{
-display:block;
-position:absolute;
-font-size:22px;
-color:#f5e6d3;
-cursor:pointer;
+.glass-panel{
+padding:34px;
+max-width:90%;
 }
 
-.menu-icon{
-left:20px;
+.glass-panel h2{
+font-size:26px;
 }
 
-.search-icon{
-right:20px;
+.glass-panel p{
+font-size:15px;
+line-height:1.6;
+}
+
+.coordinates{
+font-size:12px;
+}
+
+.giant-title{
+font-size:120px;
+opacity:0.05;
+}
+
+.ritual-section{
+padding:120px 20px;
 }
 
 }
+
 </style>
 
 </head>
@@ -1220,16 +1162,9 @@ right:20px;
 </div>
 
 <nav>
-<div class="mobile-menu" id="mobileMenu">
-<a href="#home">Home</a>
-<a href="#collection">Collection</a>
-<a href="#journal">Journal</a>
-<a href="#story">Our Story</a>
-</div>
     <a href="#home" class="logo nav-route" aria-label="Latitude and Life Homepage">
-    <span class="menu-icon">☰</span>
 <img src="ll-logo.png" class="ritual-logo" alt="Latitude & Life"
-style="height:75px; position:absolute; top:50%; left:40px; transform:translateY(-50%); opacity:0.8;">
+style="height:75px; position:absolute; top:50%; left:40px; transform:translateY(-10%); opacity:0.8;">
 </a>
     <div class="nav-links">
         <a href="#home" class="nav-route">Home</a>
@@ -1237,9 +1172,6 @@ style="height:75px; position:absolute; top:50%; left:40px; transform:translateY(
         <a href="#journal" class="nav-route">Journal</a>
         <a href="#story" class="nav-route">Our Story</a>
     </div>
-
-    <span class="search-icon">🔍</span>
-
 </nav>
 
 <main id="view-container">
@@ -1981,23 +1913,18 @@ newsletterForm.reset()
 
 })
 
-const contactForm = document.getElementById("contactForm")
-
-contactForm.addEventListener("submit", function(e){
-
-e.preventDefault()
-
-document.getElementById("contact-success").style.display = "block"
-
-contactForm.reset()
-
-})
-const menuIcon = document.querySelector(".menu-icon");
-const mobileMenu = document.getElementById("mobileMenu");
+const menuIcon = document.querySelector(".menu-icon")
+const mobileMenu = document.getElementById("mobileMenu")
 
 menuIcon.addEventListener("click", () => {
-mobileMenu.classList.toggle("active");
-});
+mobileMenu.classList.toggle("active")
+})
+
+mobileMenu.querySelectorAll("a").forEach(link => {
+link.addEventListener("click", () => {
+mobileMenu.classList.remove("active")
+})
+})
 
 </script>
 
