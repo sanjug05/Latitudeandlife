@@ -1097,7 +1097,12 @@ padding:120px 20px;
 /* --- SURGICAL MOBILE OPTIMIZATION (No Extra HTML Needed) --- */
 
 @media (max-width: 1024px) {
-    /* 1. Make the Navbar smaller and cleaner on mobile */
+/* Scale down the logo for mobile screens */
+    .ritual-logo {
+        height: 50px !important; /* Reduces size from 75px */
+        left: 20px !important;   /* Pulls it slightly closer to the edge */
+    }    
+/* 1. Make the Navbar smaller and cleaner on mobile */
     nav {
         width: 100%;
         top: 0;
