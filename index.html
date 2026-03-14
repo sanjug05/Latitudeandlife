@@ -1172,25 +1172,39 @@ padding:120px 20px;
 @media (min-width: 1025px) {
     .mobile-burger { display: none; }
 }
-// --- MOBILE MENU LOGIC (No extra HTML logic needed) ---
+// --- MOBILE MENU LOGIC (Touch Optimized) ---
 const burgerTrigger = document.getElementById("burger-trigger");
 const navLinksContainer = document.getElementById("nav-links-container");
 
 if (burgerTrigger && navLinksContainer) {
-    burgerTrigger.addEventListener("click", () => {
-        // Toggle the menu sliding in/out
+    // Function to handle the toggle
+    const toggleMenu = (e) => {
+        e.preventDefault(); // Prevents weird mobile scrolling behavior on tap
         navLinksContainer.classList.toggle("mobile-active");
-        // Toggle the burger animating into an 'X'
         burgerTrigger.classList.toggle("open");
-    });
+        
+        // Optional: Stop the body from scrolling when menu is open
+        if (navLinksContainer.classList.contains("mobile-active")) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+    };
+
+    // Listen for both click (desktop testing) and touchstart (mobile screens)
+    burgerTrigger.addEventListener("click", toggleMenu);
+    burgerTrigger.addEventListener("touchstart", toggleMenu, { passive: false });
 
     // Close the menu automatically when a link is clicked
     const mobileLinks = navLinksContainer.querySelectorAll("a");
     mobileLinks.forEach(link => {
-        link.addEventListener("click", () => {
+        const closeMenu = () => {
             navLinksContainer.classList.remove("mobile-active");
             burgerTrigger.classList.remove("open");
-        });
+            document.body.style.overflow = "auto"; // Restore scrolling
+        };
+        link.addEventListener("click", closeMenu);
+        link.addEventListener("touchstart", closeMenu, { passive: true });
     });
 }
 </style>
@@ -1847,21 +1861,22 @@ if (newsletterForm) {
 }
 
 // MOBILE MENU (Improved Dior Feel)
-const menuIcon = document.querySelector(".menu-icon")
-const mobileMenu = document.getElementById("mobileMenu")
+// --- MOBILE TOGGLE LOGIC ---
+// We use a safe check to ensure the loader doesn't crash
+const trigger = document.getElementById("burger-trigger");
+const menu = document.getElementById("nav-links-container");
 
-if (menuIcon && mobileMenu) {
-    menuIcon.addEventListener("click", () => {
-        mobileMenu.classList.toggle("active")
-        // Change burger color when overlay is active for premium feel
-        menuIcon.style.color = mobileMenu.classList.contains("active") ? "#D4B483" : "white";
-    })
-    mobileMenu.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-            mobileMenu.classList.remove("active")
-            menuIcon.style.color = "white";
-        })
-    })
+if (trigger && menu) {
+    trigger.addEventListener("click", function() {
+        menu.classList.toggle("mobile-active");
+        trigger.classList.toggle("open");
+    });
+
+    menu.querySelectorAll("a").forEach(function(link) {
+        link.addEventListener("click", function() {
+            menu.classList.remove("mobile-active");
+        });
+    });
 }
 </script>
 <div class="luxury-cursor"></div>
